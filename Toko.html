@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Toko Game Nca</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding:50px;
+    height: 100%;
+    text-align:center;
+}
+
+/* TOMBOL BERANDA */
+.backHome{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: white;
+    color: black;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 14px;
+    z-index: 9999;
+    border: none;
+    cursor: pointer;
+    font-family: Cooper Black;
+    transition: 0.3s;
+}
+.profile{
+width:150px;
+height:150px;
+border-radius:50%;
+border:2px solid rgb(10, 77, 104);
+}
+
+h1{
+margin-top:10px;
+}
+
+.tagline{
+ margin-bottom:20 auto px;
+
+    font-size: 40px;
+    font-weight: bold; /* teks tebal */
+
+    text-shadow: 0 0 8px rgba(255,255,255,0.6); /* glow biar kebaca */
+}
+
+.overlay {
+    background: rgba(59, 129, 167, 0.354); /* transparan */
+    backdrop-filter: blur(2px); /* efek blur kaca */
+    
+    padding: 50 px;
+    border-radius: 25px;
+    max-width: 1000px;
+    margin: 30px auto;
+
+    color: black;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.7;
+
+    box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+.btn {
+            display: inline-block;
+            padding: 20px 37px;
+            margin: 20px;
+            text-decoration: none;
+            color: white;
+            border-radius: 20px;
+            font-weight: solomon;
+            background-color: #6ecbff;
+
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
+        }
+body {
+    min-height: 100vh; /* ini penting */
+    
+   background: linear-gradient(to right, hsl(208, 87%, 12%), #844ba7);
+    background-size: cover;
+}
+.accordion{
+width:90%;
+margin:auto;
+text-align:left;
+}
+
+
+.item{
+background:#ffffffaa;
+padding:20px;
+margin:10px auto;
+border-radius:15px;
+cursor:pointer;
+}
+.content{
+display:none;
+padding:10px;
+font-size:25px;
+}
+
+</style>
+</head>
+
+<body>
+    <!-- TOMBOL BERANDA -->
+<button class="backHome"
+onclick="window.location.href='Projectku.html'">
+
+⬅ Beranda
+
+</button>
+
+
+<img src="Puzzle6.png" class="profile">
+
+<h1> </h1>
+<div class="tagline">
+Selamat datang diToko AYI!<br>
+</div>
+ 
+<div class="overlay">
+    BACA DULU!!! OKEY!! <br>
+    Oke guys dsini aku menyediakan jasa edit foto dan video dengan hasil yang baik.<br>
+    Sebelum order dibaca dulu ya ✨ <br>
+     Harga Akan Naik Tergantung Kesulitan Preset!!
+     <br>
+    
+  DAFTAR HARGA!!
+</div>
+  
+ 
+<div class="accordion">
+ 
+ 
+<div class="item" onclick="toggle(this)">
++ Harga Jasa Edit Video
+<div class="content">
+Video Preset    : Rp 3.000 - Rp 10.000 <br>
+Video Postingan : Rp 10.000<br>
+Video Request   : Rp 10.000 - Rp 30.000 <br>
+Harga diatas Dari (15detik/ 30 detik)
+</div>
+</div>
+
+<div class="item" onclick="toggle(this)">
++ Harga Jasa Edit Foto
+<div class="content">
+Foto Preset    : Rp 2.000 <br>
+Foto Postingan : Rp 3.000<br>
+Foto Random    : Rp 1.000 <br>
+Harga diatas untuk 1 Foto
+</div>
+</div>
+
+<div class="item" onclick="toggle(this)">
++ Pembayaran
+<div class="content">
+Dana<br>
+Qr<br>
+
+
+</div>
+</div>
+
+<div class="item" onclick="toggle(this)">
++ Lama Proses
+<div class="content">
+1 - 6 Jam Tergantung Antrian
+</div>
+</div>
+
+</div>
+ 
+<div class="overlay">
+    Top Up Game!! ? <br>
+    Bisa dong.. Top Up Game Khusus Free Fire <br>
+     DAFTAR HARGA!! 
+     <br>
+
+</div>
+ 
+<div class="accordion">
+ 
+ 
+<div class="item" onclick="toggle(this)">
++ Top Up Diamon
+<div class="content">
+ Tersedia Dari Rp 1.000 - Rp 5.000.000
+</div>
+</div>
+
+<div class="item" onclick="toggle(this)">
++ Top Up Membership
+<div class="content">
+ Paket Membership FREE FIRE <br>
+ <br>
+Paket A <br>
+Membership Bulanan 1x<br>
+Membership Mingguan 3x <br>
+Rp 185.000✅<br>
+ <br>
+ 
+Paket B<br>
+Membership Bulanan 1x<br>
+Membership Mingguan 4x<br>
+Rp 210.000✅<br>
+
+<br>
+Paket C<br>
+Membership Bulanan 2x<br>
+Membership Mingguan 8x<br>
+Rp 420.000✅<br>
+
+</div>
+</div>
+
+<div class="item" onclick="toggle(this)">
++ Pembayaran
+<div class="content">
+Dana<br>
+Qr<br>
+
+
+</div>
+</div>
+
+<div class="item" onclick="toggle(this)">
++ Lama Proses
+<div class="content">
+1 - 10 Menit Tergantung Antrian
+</div>
+
+</div>
+
+</div>
+<div class="sosial">
+   <a href="https://wa.me/628216731955" target="_blank" class="btn wa">
+        Pesan Sekarang
+    </a>
+</div>
+<div>
+
+</div>
+</div>
+</div>
+ 
+<script>
+
+function toggle(el){
+let content = el.querySelector(".content");
+
+if(content.style.display === "block"){
+content.style.display="none";
+}else{
+content.style.display="block";
+}
+
+}
+
+</script>
+
+</script>
+
+</body>
+</html>

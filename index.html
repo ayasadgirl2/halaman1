@@ -1,0 +1,251 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Web App Nca</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+
+    /* BACKGROUND SAMA SEPERTI GAME */
+    background: linear-gradient(to right, hsl(208, 87%, 12%), #844ba7);
+
+    color:white;
+    text-align:center;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:500px;
+    margin:40px auto;
+    background: rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter: blur(10px);
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+/* FOTO PROFIL */
+
+.profile-img{
+
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid white;
+
+    margin-bottom:20px;
+
+    box-shadow:0 0 20px rgba(255,255,255,0.5);
+}
+
+/* JUDUL */
+
+h1{
+    margin-bottom:10px;
+    font-size:40px;
+}
+
+.subtitle{
+    margin-bottom:30px;
+}
+
+/* DATA PRIBADI */
+
+.profile{
+    background: rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:30px;
+}
+
+/* MENU */
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+button{
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* HALAMAN */
+
+.page{
+    display:none;
+}
+
+.active{
+    display:block;
+}
+
+/* TOMBOL */
+
+.btn-game{
+    background:#00c6ff;
+    color:white;
+}
+
+.btn-belajar{
+    background:#9b59b6;
+    color:white;
+}
+
+.btn-tiktok{
+    background:#111;
+    color:white;
+}
+
+.btn-donate{
+    background:#00ff00;
+    color:white;
+}
+
+.btn-koin{
+    background:#ffc400;
+    color:white;
+}
+
+.back{
+    margin-top:20px;
+    background:white;
+    color:black;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- BERANDA -->
+
+<div id="home" class="page active">
+
+    <div class="container">
+
+        <!-- FOTO PROFIL -->
+
+        <img src="Profil2.jpeg" class="profile-img">
+
+        <h1>KAK  N.A.D</h1>
+
+        <p class="subtitle">
+            Haii!! Wellcome Dari Ayi ✨
+        </p>
+
+        <div class="profile">
+
+            <h2>Data Pribadi</h2>
+
+            <p><b>Nama :</b> Ayi</p>
+            <p><b>Umur :</b> 20th</p>
+            <p><b>Asal :</b> Riau</p>
+            <p><b>Tinggi :</b> 160cm</p>
+            <p><b>WA :</b> 0821-6731-955</p>
+             <p><b>! Menerima Colab Game Free Fire !</p>
+
+        </div>
+
+        <div class="menu">
+
+
+            <button class="btn-game"
+            onclick="window.location.href='utsnurlis.html'">
+                 Game Puzzle
+            </button>
+
+
+            <button class="btn-belajar"
+           onclick="window.location.href='Toko.html'">
+                 Toko
+            </button>
+
+            <!-- TIKTOK -->
+
+            <button class="btn-tiktok"
+            onclick="window.open('https://www.tiktok.com/@nor.aisyah.disni')">
+                TikTok
+            </button>
+
+            <!-- DONATE -->
+
+            <button class="btn-donate"
+            onclick="window.open('https://sociabuzz.com/yayiyu18/tribe')">
+                Donate
+            </button>
+
+            <!-- KOIN TIKTOK -->
+
+            <button class="btn-koin"
+            onclick="window.open('https://www.tiktok.com/coin?rc=Y7SFZ3SR&rie=')">
+                  Koin TikTok Murah
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- HALAMAN PEMBELAJARAN -->
+
+<div id="belajar" class="page">
+
+    <div class="container">
+
+        <h1>📚 Halaman Pembelajaran</h1>
+
+        <p>
+            Di sini nanti kamu bisa menambahkan materi pembelajaran.
+        </p>
+
+        <button class="back"
+        onclick="showPage('home')">
+            ⬅ Kembali
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+function showPage(pageId){
+
+    let pages = document.querySelectorAll('.page');
+
+    pages.forEach(function(page){
+        page.classList.remove('active');
+    });
+
+    document.getElementById(pageId).classList.add('active');
+}
+
+</script>
+
+</body>
+</html>
