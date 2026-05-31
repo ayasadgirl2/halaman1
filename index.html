@@ -8,19 +8,16 @@
 
 <style>
 
-/* BODY */
-
 body{
     margin:0;
     padding:0;
     font-family:Arial, sans-serif;
 
+    /* BACKGROUND SAMA SEPERTI GAME */
     background: linear-gradient(to right, hsl(208, 87%, 12%), #844ba7);
 
     color:white;
     text-align:center;
-
-    min-height:100vh;
 }
 
 /* CONTAINER */
@@ -28,17 +25,11 @@ body{
 .container{
     width:90%;
     max-width:500px;
-
     margin:40px auto;
-
     background: rgba(255,255,255,0.1);
-
     padding:30px;
-
     border-radius:20px;
-
     backdrop-filter: blur(10px);
-
     box-shadow:0 0 20px rgba(0,0,0,0.3);
 }
 
@@ -69,22 +60,15 @@ h1{
 
 .subtitle{
     margin-bottom:30px;
-    font-size:16px;
 }
 
 /* DATA PRIBADI */
 
 .profile{
-
     background: rgba(255,255,255,0.1);
-
     padding:20px;
-
     border-radius:15px;
-
     margin-bottom:30px;
-
-    line-height:1.8;
 }
 
 /* MENU */
@@ -95,22 +79,13 @@ h1{
     gap:15px;
 }
 
-/* BUTTON */
-
 button{
-
     padding:15px;
-
     border:none;
-
     border-radius:12px;
-
     font-size:16px;
-
     cursor:pointer;
-
     transition:0.3s;
-
     font-weight:bold;
 }
 
@@ -128,7 +103,12 @@ button:hover{
     display:block;
 }
 
-/* WARNA BUTTON */
+/* TOMBOL */
+
+.btn-game{
+    background:#00c6ff;
+    color:white;
+}
 
 .btn-belajar{
     background:#9b59b6;
@@ -142,54 +122,18 @@ button:hover{
 
 .btn-donate{
     background:#00ff00;
-    color:black;
+    color:white;
 }
 
 .btn-koin{
     background:#ffc400;
-    color:black;
+    color:white;
 }
 
 .back{
     margin-top:20px;
     background:white;
     color:black;
-}
-
-/* RESPONSIVE HP */
-
-@media(max-width:768px){
-
-    .container{
-        width:85%;
-        padding:20px;
-        margin:20px auto;
-    }
-
-    h1{
-        font-size:28px;
-    }
-
-    .subtitle{
-        font-size:14px;
-    }
-
-    .profile{
-        font-size:14px;
-        padding:15px;
-    }
-
-    button{
-        width:100%;
-        font-size:15px;
-        padding:14px;
-    }
-
-    .profile-img{
-        width:100px;
-        height:100px;
-    }
-
 }
 
 </style>
@@ -207,54 +151,54 @@ button:hover{
 
         <img src="Profil2.jpeg" class="profile-img">
 
-        <h1>KAK N.A.D</h1>
+        <h1>KAK  N.A.D</h1>
 
         <p class="subtitle">
             Haii!! Wellcome Dari Ayi ✨
         </p>
 
-            <p><b>! Menerima Colab Game Free Fire !</b></p>
+        <div class="profile">
+
+ 
+
+            
+            <p><b>! Menerima Colab Game Free Fire !</p>
 
         </div>
 
-        <!-- MENU -->
-
         <div class="menu">
 
-            <!-- TOKO -->
+
+            <button class="btn-game"
+            onclick="window.location.href='utsnurlis.html'">
+                 Game Puzzle
+            </button>
+
 
             <button class="btn-belajar"
-            onclick="window.location.href='Toko.html'">
-
-                 🛒 Toko
-
+           onclick="window.location.href='Toko.html'">
+                 Toko
             </button>
 
             <!-- TIKTOK -->
 
             <button class="btn-tiktok"
             onclick="window.open('https://www.tiktok.com/@nor.aisyah.disni')">
-
-                🎵 TikTok
-
+                TikTok
             </button>
 
             <!-- DONATE -->
 
             <button class="btn-donate"
             onclick="window.open('https://sociabuzz.com/yayiyu18/tribe')">
-
-                💚 Donate
-
+                Donate
             </button>
 
-            <!-- KOIN -->
+            <!-- KOIN TIKTOK -->
 
             <button class="btn-koin"
             onclick="window.open('https://www.tiktok.com/coin?rc=Y7SFZ3SR&rie=')">
-
-                  🪙 Koin TikTok Murah
-
+                  Koin TikTok Murah
             </button>
 
         </div>
@@ -263,7 +207,7 @@ button:hover{
 
 </div>
 
-<!-- HALAMAN BELAJAR -->
+<!-- HALAMAN PEMBELAJARAN -->
 
 <div id="belajar" class="page">
 
@@ -277,9 +221,7 @@ button:hover{
 
         <button class="back"
         onclick="showPage('home')">
-
             ⬅ Kembali
-
         </button>
 
     </div>
@@ -293,9 +235,7 @@ function showPage(pageId){
     let pages = document.querySelectorAll('.page');
 
     pages.forEach(function(page){
-
         page.classList.remove('active');
-
     });
 
     document.getElementById(pageId).classList.add('active');
