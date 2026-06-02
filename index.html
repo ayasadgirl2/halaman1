@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -8,42 +8,40 @@
 
 <style>
 
-body{
+*{
     margin:0;
     padding:0;
-    font-family:Arial, sans-serif;
-
-    /* BACKGROUND SAMA SEPERTI GAME */
-    background: linear-gradient(to right, hsl(208, 87%, 12%), #844ba7);
-
-    color:white;
-    text-align:center;
+    box-sizing:border-box;
 }
 
-/* CONTAINER */
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to right, hsl(208, 87%, 12%), #844ba7);
+    color:white;
+    text-align:center;
+    min-height:100vh;
+    padding:20px;
+}
 
 .container{
-    width:90%;
+    width:100%;
     max-width:500px;
     margin:40px auto;
-    background: rgba(255,255,255,0.1);
-    padding:30px;
+    background:rgba(255,255,255,0.1);
+    padding:30px 20px;
     border-radius:20px;
-    backdrop-filter: blur(10px);
+    backdrop-filter:blur(10px);
     box-shadow:0 0 20px rgba(0,0,0,0.3);
 }
 
-/* FOTO PROFIL */
-
 .profile-img{
-
     width:120px;
     height:120px;
+    max-width:30vw;
+    max-height:30vw;
 
     border-radius:50%;
-
     object-fit:cover;
-
     border:4px solid white;
 
     margin-bottom:20px;
@@ -51,27 +49,26 @@ body{
     box-shadow:0 0 20px rgba(255,255,255,0.5);
 }
 
-/* JUDUL */
-
 h1{
     margin-bottom:10px;
-    font-size:40px;
+    font-size:clamp(28px,5vw,40px);
 }
 
 .subtitle{
     margin-bottom:30px;
+    font-size:clamp(14px,3vw,18px);
 }
 
-/* DATA PRIBADI */
-
 .profile{
-    background: rgba(255,255,255,0.1);
+    background:rgba(255,255,255,0.1);
     padding:20px;
     border-radius:15px;
     margin-bottom:30px;
 }
 
-/* MENU */
+.profile p{
+    line-height:1.6;
+}
 
 .menu{
     display:flex;
@@ -80,6 +77,7 @@ h1{
 }
 
 button{
+    width:100%;
     padding:15px;
     border:none;
     border-radius:12px;
@@ -90,10 +88,8 @@ button{
 }
 
 button:hover{
-    transform:scale(1.05);
+    transform:translateY(-2px);
 }
-
-/* HALAMAN */
 
 .page{
     display:none;
@@ -102,8 +98,6 @@ button:hover{
 .active{
     display:block;
 }
-
-/* TOMBOL */
 
 .btn-game{
     background:#00c6ff;
@@ -136,6 +130,25 @@ button:hover{
     color:black;
 }
 
+/* RESPONSIVE HP */
+
+@media (max-width:480px){
+
+    .container{
+        padding:20px 15px;
+    }
+
+    .profile-img{
+        width:100px;
+        height:100px;
+    }
+
+    button{
+        font-size:14px;
+        padding:14px;
+    }
+}
+
 </style>
 </head>
 
@@ -147,60 +160,39 @@ button:hover{
 
     <div class="container">
 
-        <!-- FOTO PROFIL -->
+        <img src="Profil2.jpeg" alt="Foto Profil" class="profile-img">
 
-        <img src="Profil2.jpeg" class="profile-img">
-
-        <h1>KAK  N.A.D</h1>
+        <h1>KAK N.A.D</h1>
 
         <p class="subtitle">
-            Haii!! Wellcome Dari Ayi ✨
+            Haii!! Welcome Dari Ayi ✨
         </p>
 
         <div class="profile">
-
- 
-
-            
-            <p><b>! Menerima Colab Game Free Fire !</p>
-
+            <p><b>🔥 Menerima Colab Game Free Fire 🔥</b></p>
         </div>
 
         <div class="menu">
-
-
-            <button class="btn-game"
-            onclick="window.location.href='utsnurlis.html'">
-                 Game Puzzle
-            </button>
-
-
-            <button class="btn-belajar"
-           onclick="window.location.href='Toko.html'">
-                 Toko
-            </button>
-
-            <!-- TIKTOK -->
-
-            <button class="btn-tiktok"
-            onclick="window.open('https://www.tiktok.com/@nor.aisyah.disni')">
-                TikTok
-            </button>
-
-            <!-- DONATE -->
-
             <button class="btn-donate"
             onclick="window.open('https://sociabuzz.com/yayiyu18/tribe')">
-                Donate
+                💚 Donate
             </button>
-
-            <!-- KOIN TIKTOK -->
 
             <button class="btn-koin"
             onclick="window.open('https://www.tiktok.com/coin?rc=Y7SFZ3SR&rie=')">
-                  Koin TikTok Murah
+                🪙 Koin TikTok Murah
+            </button>
+            <button class="btn-belajar"
+            onclick="window.location.href='Toko.html'">
+                🛒 Toko
             </button>
 
+            <button class="btn-tiktok"
+            onclick="window.open('https://www.tiktok.com/@nor.aisyah.disni')">
+                🎵 TikTok
+            </button>
+
+    
         </div>
 
     </div>
@@ -215,7 +207,7 @@ button:hover{
 
         <h1>📚 Halaman Pembelajaran</h1>
 
-        <p>
+        <p style="margin-top:15px;">
             Di sini nanti kamu bisa menambahkan materi pembelajaran.
         </p>
 
