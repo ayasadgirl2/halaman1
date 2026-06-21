@@ -347,10 +347,82 @@ box-shadow:
 0 0 30px rgba(0,150,255,.25);
 }
 
+@media(max-width:900px){
+
 body{
-overflow-x:auto;
-min-width:1200px;
+flex-direction:column;
+overflow-x:hidden;
 }
+
+/* SIDEBAR */
+.sidebar{
+width:100%;
+padding:20px;
+}
+
+.logo img{
+width:90px;
+height:90px;
+}
+
+.logo h2{
+font-size:40px;
+}
+
+/* MAIN */
+.main{
+padding:15px;
+}
+
+/* HEADER */
+.topbar{
+flex-direction:column;
+gap:15px;
+align-items:flex-start;
+}
+
+.topbar h1{
+font-size:32px;
+}
+
+#clock{
+width:100%;
+text-align:center;
+padding:15px;
+}
+
+/* CARD */
+.card{
+padding:18px;
+border-radius:22px;
+}
+
+/* PROFIL */
+.student-grid{
+grid-template-columns:1fr;
+}
+
+.student-card{
+width:100%;
+padding:22px;
+}
+
+/* GRID DONATE */
+.grid{
+grid-template-columns:1fr;
+}
+
+.qris{
+width:100%;
+max-width:260px;
+}
+
+/* BUTTON */
+button,
+.btn{
+width:100%;
+}
+
 
 .topbar h1{
 font-size:34px;
