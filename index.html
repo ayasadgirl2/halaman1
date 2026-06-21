@@ -350,34 +350,46 @@ box-shadow:
 @media(max-width:900px){
 
 body{
+display:flex;
 flex-direction:row;
 overflow-x:auto;
 }
 
+/* sidebar tetap kiri */
 .sidebar{
 width:280px;
 min-width:280px;
 height:100vh;
 }
 
+/* isi tetap di samping */
 .main{
 flex:1;
-min-width:900px;
+width:calc(100vw - 280px);
 padding:20px;
 }
 
-.topbar h1{
-font-size:40px;
-}
-
+/* card menyesuaikan */
 .student-grid{
-grid-template-columns:
-repeat(3,1fr);
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
 }
 
 .grid{
-grid-template-columns:
-repeat(2,1fr);
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.topbar h1{
+font-size:32px;
 }
 
 
