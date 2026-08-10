@@ -96,11 +96,11 @@ body::after {
     flex-direction: column;
     align-items: center;
 
-    border-left: 2px solid rgba(202, 137, 255, .8);
-    border-right: 2px solid rgba(202, 137, 255, .8);
+    border-left: 2px solid hwb(213 54% 0% / 0.8);
+    border-right: 2px solid hwb(213 54% 0% / 0.8);
 
     box-shadow:
-        0 0 10px rgba(180, 100, 255, .7),
+        0 0 10px rgba(100, 146, 255, 0.7),
         inset 0 0 30px rgba(110, 60, 180, .08);
 }
 
@@ -118,13 +118,13 @@ body::after {
     right: 18px;
     bottom: 20px;
 
-    border: 2px solid rgba(214, 157, 255, .85);
+    border: 2px solid hwb(213 54% 0% / 0.8);
     border-radius: 35px;
 
     box-shadow:
-        0 0 7px #c77dff,
+        0 0 7px hwb(213 54% 0% / 0.8);
         0 0 18px #9b4dff,
-        0 0 35px rgba(174, 83, 255, .45);
+        0 0 35px lab(21.92% 7.19 -33.22 / 0.8);
 
     pointer-events: none;
     z-index: -1;
@@ -157,15 +157,15 @@ body::after {
     background: linear-gradient(
         135deg,
         #ffffff,
-        #9d5cff,
-        #e88cff,
+        hsl(232, 100%, 68%),
+        #8cdcff,
         #ffffff
     );
 
     box-shadow:
         0 0 10px #ffffff,
-        0 0 25px #a957ff,
-        0 0 55px #7b35ff;
+        0 0 25px #57c4ff,
+        0 0 55px #3589ff;
 
     position: relative;
 }
@@ -187,12 +187,12 @@ body::after {
 
     transform: translate(-50%, -50%);
 
-    border: 1px solid rgba(255, 180, 255, .65);
+    border: 1px solid rgba(180, 188, 255, 0.65);
 
     border-radius: 50%;
 
     box-shadow:
-        0 0 10px rgba(201, 120, 255, .6);
+        0 0 10px rgba(120, 163, 255, 0.6);
 
     pointer-events: none;
 }
@@ -225,12 +225,12 @@ body::after {
 
     font-family: "Brush Script MT", "Segoe Script", cursive;
 
-    color: #f1a4ff;
+    color: #a4ceff;
 
     text-shadow:
         0 0 5px #ffffff,
-        0 0 12px #ff7cff,
-        0 0 25px #b84dff;
+        0 0 12px #7ca5ff,
+        0 0 25px #4d59ff;
 }
 
 
@@ -250,8 +250,8 @@ body::after {
     background: linear-gradient(
         180deg,
         #ffffff 0%,
-        #d9c8ff 35%,
-        #b96eff 65%,
+        #c8ddff 35%,
+        #6e8bff 65%,
         #ffffff 100%
     );
 
@@ -260,8 +260,8 @@ body::after {
 
     filter:
         drop-shadow(0 0 4px #ffffff)
-        drop-shadow(0 0 15px #a84dff)
-        drop-shadow(0 0 30px #7b3cff);
+        drop-shadow(0 0 15px #4d82ff)
+        drop-shadow(0 0 30px #3c7dff);
 }
 
 
@@ -274,7 +274,7 @@ body::after {
 
     text-shadow:
         0 0 8px #ffffff,
-        0 0 15px #a85cff;
+        0 0 15px #5c8dff;
 }
 
 
@@ -291,7 +291,7 @@ body::after {
 
     position: relative;
 
-    border: 2px solid #cf8aff;
+    border: 2px solid #8ab9ff;
 
     border-radius: 30px;
 
@@ -303,8 +303,8 @@ body::after {
         );
 
     box-shadow:
-        0 0 8px #d58aff,
-        0 0 20px rgba(176, 70, 255, .7),
+        0 0 8px #8ab9ff,
+        0 0 20px rgba(70, 129, 255, 0.7),
         inset 0 0 30px rgba(126, 52, 255, .12);
 }
 
@@ -326,7 +326,7 @@ body::after {
     align-items: center;
     justify-content: center;
 
-    border: 2px solid #e19cff;
+    border: 2px solid #9cc0ff;
 
     border-radius: 50%;
 
@@ -338,7 +338,7 @@ body::after {
 
     box-shadow:
         0 0 8px #ffffff,
-        0 0 20px #c259ff,
+        0 0 20px #59bdff,
         0 0 35px #7b3cff;
 }
 
@@ -354,13 +354,13 @@ body::after {
 
     text-shadow:
         0 0 8px #ffffff,
-        0 0 15px #b45cff;
+        0 0 15px #5c92ff;
 }
 
 
 .schedule-title span {
     margin: 0 12px;
-    color: #d98aff;
+    color: #8ab1ff;
 }
 
 
@@ -392,8 +392,8 @@ body::after {
 
     text-shadow:
         0 0 5px #ffffff,
-        0 0 15px #e879ff,
-        0 0 25px #8b43ff;
+        0 0 15px #79beff,
+        0 0 25px #437fff;
 }
 
 
@@ -402,10 +402,10 @@ body::after {
 
     font-size: 22px;
 
-    color: #eea0ff;
+    color: #a0cfff;
 
     text-shadow:
-        0 0 8px #ff6fff;
+        0 0 8px #6f91ff;
 }
 
 
@@ -416,7 +416,7 @@ body::after {
 
     text-shadow:
         0 0 10px #ffffff,
-        0 0 20px #bc5cff;
+        0 0 20px #5cb3ff;
 }
 
 
@@ -450,7 +450,7 @@ body::after {
 
     color: #ffffff;
 
-    border: 2px solid #d889ff;
+    border: 2px solid #89b8ff;
 
     border-radius: 45px;
 
@@ -462,8 +462,8 @@ body::after {
         );
 
     box-shadow:
-        0 0 7px #d27cff,
-        0 0 18px rgba(181, 70, 255, .65),
+        0 0 7px #7ccdff,
+        0 0 18px rgba(70, 190, 255, 0.65),
         inset 0 0 15px rgba(168, 75, 255, .12);
 
     transition:
@@ -479,14 +479,14 @@ body::after {
     background:
         linear-gradient(
             90deg,
-            rgba(80, 30, 130, .8),
+            rgba(30, 62, 130, 0.8),
             rgba(20, 20, 65, .95)
         );
 
     box-shadow:
         0 0 10px #ffffff,
-        0 0 25px #d15cff,
-        0 0 45px rgba(180, 65, 255, .8);
+        0 0 25px #5c90ff,
+        0 0 45px rgba(65, 106, 255, 0.8);
 }
 
 
@@ -512,13 +512,13 @@ body::after {
 
     background: #05050e;
 
-    border: 2px solid rgba(218, 150, 255, .7);
+    border: 2px solid rgba(150, 199, 255, 0.7);
 
     font-size: 27px;
 
     box-shadow:
-        0 0 8px #b951ff,
-        inset 0 0 8px rgba(194, 78, 255, .3);
+        0 0 8px #518eff,
+        inset 0 0 8px rgba(78, 149, 255, 0.3);
 }
 
 
@@ -546,7 +546,7 @@ body::after {
 
     text-shadow:
         0 0 5px #ffffff,
-        0 0 10px #b956ff;
+        0 0 10px #56bbff;
 }
 
 
@@ -576,7 +576,7 @@ body::after {
 
     text-shadow:
         0 0 8px #ffffff,
-        0 0 15px #d35cff;
+        0 0 15px #5ca8ff;
 }
 
 
@@ -592,12 +592,12 @@ body::after {
 
 
 .link-button:nth-child(4) .icon {
-    color: #ff83ff;
+    color: #83cfff;
 }
 
 
 .link-button:nth-child(5) .icon {
-    color: #ff6bd6;
+    color: #6bbaff;
 }
 
 
@@ -631,12 +631,12 @@ footer p {
 
     font-style: italic;
 
-    color: #f09cff;
+    color: #9cdbff;
 
     text-shadow:
         0 0 5px #ffffff,
-        0 0 12px #ff6cff,
-        0 0 25px #a239ff;
+        0 0 12px #6cc2ff,
+        0 0 25px #3995ff;
 }
 
 
