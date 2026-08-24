@@ -1,936 +1,138 @@
-/* =========================================
-   RESET
-========================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    min-height: 100vh;
-    font-family: Georgia, "Times New Roman", serif;
-    color: #ffffff;
-    background:
-        radial-gradient(circle at 50% 15%, rgba(91, 64, 180, 0.35), transparent 25%),
-        radial-gradient(circle at 20% 70%, rgba(85, 42, 160, 0.25), transparent 25%),
-        radial-gradient(circle at 80% 80%, rgba(39, 70, 170, 0.25), transparent 30%),
-        #020511;
-    overflow-x: hidden;
-}
-
-
-/* =========================================
-   GALAXY BACKGROUND
-========================================= */
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-
-    background-image:
-        radial-gradient(circle, rgba(255,255,255,.9) 1px, transparent 1px),
-        radial-gradient(circle, rgba(190,150,255,.7) 1px, transparent 1px),
-        radial-gradient(circle, rgba(255,255,255,.5) 1px, transparent 1px);
-
-    background-size:
-        120px 120px,
-        180px 180px,
-        250px 250px;
-
-    background-position:
-        20px 30px,
-        80px 100px,
-        150px 50px;
-
-    opacity: .55;
-    z-index: -2;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Acara Live - IYA  AYI</title>
 
-/* Nebula */
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
 
-    background:
-        radial-gradient(
-            ellipse at bottom left,
-            rgba(123, 61, 190, .35),
-            transparent 35%
-        ),
-        radial-gradient(
-            ellipse at bottom right,
-            rgba(47, 70, 180, .35),
-            transparent 35%
-        );
+<body>
 
-    z-index: -1;
-}
+    <!-- Background -->
+    <div class="stars"></div>
 
+    <main class="container">
 
-/* =========================================
-   MAIN CONTAINER
-========================================= */
+        <!-- =========================
+             PROFILE
+        ========================== -->
+        <section class="profile">
 
-.container {
-    position: relative;
+            <div class="profile-image">
+                <img src="wp22.jpeg" alt="Profile">
+            </div>
 
-    width: min(92%, 720px);
-    min-height: 100vh;
+            <h1>KAK   NAD</h1>
 
-    margin: auto;
-    padding: 55px 25px 40px;
+            <p class="reminder">
+                ✦ Menerima Colab Free Fire! ✦
+            </p>
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        </section>
 
-    border-left: 2px solid hwb(213 54% 0% / 0.8);
-    border-right: 2px solid hwb(213 54% 0% / 0.8);
 
-    box-shadow:
-        0 0 10px rgba(100, 146, 255, 0.7),
-        inset 0 0 30px rgba(110, 60, 180, .08);
-}
+        <!-- =========================
+             JADWAL LIVE
+        ========================== -->
+        <section class="schedule">
 
+            <div class="clock">
+                <i class="fa-regular fa-clock"></i>
+            </div>
 
-/* =========================================
-   NEON FRAME
-========================================= */
+            <div class="schedule-title">
+                <span>✦</span>
+                JADWAL LIVE AKTIF
+                <span>✦</span>
+            </div>
 
-.container::before {
-    content: "";
+            <div class="time">
 
-    position: absolute;
-    top: 20px;
-    left: 18px;
-    right: 18px;
-    bottom: 20px;
+                <div class="time-box">
+                    <strong>19.00</strong>
+                    <span>WIB</span>
+                </div>
 
-    border: 2px solid hwb(213 54% 0% / 0.8);
-    border-radius: 35px;
+                <div class="separator">
+                    -
+                </div>
 
-    box-shadow:
-        0 0 7px hwb(213 54% 0% / 0.8);
-        0 0 18px #9b4dff,
-        0 0 35px lab(21.92% 7.19 -33.22 / 0.8);
+                <div class="time-box">
+                    <strong>00.00</strong>
+                    <span>WIB</span>
+                </div>
 
-    pointer-events: none;
-    z-index: -1;
-}
+            </div>
 
+        </section>
 
-/* =========================================
-   PROFILE
-========================================= */
 
-.profile {
-    width: 100%;
-    text-align: center;
-    position: relative;
-}
+        <!-- =========================
+             SOCIAL BUTTONS
+        ========================== -->
+        <section class="links">
+     <!-- Sociabuzz -->
+            <a href="https://sociabuzz.com/yayiyu18/tribe" class="link-button" target="_blank">
 
+                <div class="icon">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
 
-/* Profile circle */
+                <div class="link-text">
+                    <strong>Sociabuzz / Donate</strong>
+                    <span>Dukung aku di sini ♡</span>
+                </div>
 
-.profile-image {
-    width: 180px;
-    height: 180px;
+                <div class="arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
 
-    margin: 5px auto 20px;
+            </a>
 
-    border-radius: 50%;
 
-    padding: 7px;
+            <!-- TikTok Utama -->
+            <a href="https://www.tiktok.com/coin?rc=Y7SFZ3SR" class="link-button" target="_blank">
 
-    background: linear-gradient(
-        135deg,
-        #ffffff,
-        hsl(232, 100%, 68%),
-        #8cdcff,
-        #ffffff
-    );
+                <div class="icon">
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
 
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 25px #57c4ff,
-        0 0 55px #3589ff;
+                <div class="link-text">
+                    <strong>Koin TikTok Murah</strong>
+                    <span>Follow untuk lainnya!</span>
+                </div>
 
-    position: relative;
-}
+                <div class="arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
 
- 
+            </a>
 
-/* Second orbit */
+        </section>
 
-.profile-image::after {
-    content: "";
 
-    position: absolute;
+        <!-- =========================
+             FOOTER
+        ========================== -->
+        <footer>
+            <p>♡ Thank You ♡</p>
+        </footer>
 
-    width: 230px;
-    height: 230px;
+    </main>
 
-    left: 50%;
-    top: 50%;
 
-    transform: translate(-50%, -50%);
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
-    border: 1px solid rgba(180, 188, 255, 0.65);
-
-    border-radius: 50%;
-
-    box-shadow:
-        0 0 10px rgba(120, 163, 255, 0.6);
-
-    pointer-events: none;
-}
-
-
-.profile-image img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-}
-
-
-/* =========================================
-   TITLE
-========================================= */
-
-.profile h1 {
-    margin-top: 35px;
-
-    font-size: clamp(50px, 9vw, 85px);
-
-    font-weight: normal;
-
-    font-style: italic;
-
-    font-family: "Brush Script MT", "Segoe Script", cursive;
-
-    color: #a4ceff;
-
-    text-shadow:
-        0 0 5px #ffffff,
-        0 0 12px #7ca5ff,
-        0 0 25px #4d59ff;
-}
-
-
-.profile h2 {
-    margin-top: -8px;
-
-    font-size: clamp(80px, 16vw, 145px);
-
-    line-height: .9;
-
-    letter-spacing: 8px;
-
-    font-weight: bold;
-
-    color: #ffffff;
-
-    background: linear-gradient(
-        180deg,
-        #ffffff 0%,
-        #c8ddff 35%,
-        #6e8bff 65%,
-        #ffffff 100%
-    );
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    filter:
-        drop-shadow(0 0 4px #ffffff)
-        drop-shadow(0 0 15px #4d82ff)
-        drop-shadow(0 0 30px #3c7dff);
-}
-
-
-.reminder {
-    margin-top: 25px;
-
-    font-size: clamp(15px, 3vw, 23px);
-
-    letter-spacing: 1px;
-
-    text-shadow:
-        0 0 8px #ffffff,
-        0 0 15px #5c8dff;
-}
-
-
-/* =========================================
-   SCHEDULE
-========================================= */
-
-.schedule {
-    width: 100%;
-
-    margin-top: 55px;
-
-    padding: 35px 30px 30px;
-
-    position: relative;
-
-    border: 2px solid #8ab9ff;
-
-    border-radius: 30px;
-
-    background:
-        linear-gradient(
-            180deg,
-            rgba(25, 20, 65, .55),
-            rgba(4, 8, 30, .75)
-        );
-
-    box-shadow:
-        0 0 8px #8ab9ff,
-        0 0 20px rgba(70, 129, 255, 0.7),
-        inset 0 0 30px rgba(126, 52, 255, .12);
-}
-
-
-/* Clock */
-
-.clock {
-    position: absolute;
-
-    top: -35px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    width: 70px;
-    height: 70px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 2px solid #9cc0ff;
-
-    border-radius: 50%;
-
-    background: #07051b;
-
-    color: #ffffff;
-
-    font-size: 32px;
-
-    box-shadow:
-        0 0 8px #ffffff,
-        0 0 20px #59bdff,
-        0 0 35px #7b3cff;
-}
-
-
-.schedule-title {
-    text-align: center;
-
-    font-size: clamp(18px, 4vw, 27px);
-
-    letter-spacing: 1px;
-
-    margin-bottom: 20px;
-
-    text-shadow:
-        0 0 8px #ffffff,
-        0 0 15px #5c92ff;
-}
-
-
-.schedule-title span {
-    margin: 0 12px;
-    color: #8ab1ff;
-}
-
-
-.time {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 25px;
-}
-
-
-.time-box {
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-}
-
-
-.time-box strong {
-    font-size: clamp(45px, 9vw, 75px);
-
-    line-height: 1;
-
-    color: #ffffff;
-
-    text-shadow:
-        0 0 5px #ffffff,
-        0 0 15px #79beff,
-        0 0 25px #437fff;
-}
-
-
-.time-box span {
-    margin-top: 10px;
-
-    font-size: 22px;
-
-    color: #a0cfff;
-
-    text-shadow:
-        0 0 8px #6f91ff;
-}
-
-
-.separator {
-    font-size: 45px;
-
-    color: #ffffff;
-
-    text-shadow:
-        0 0 10px #ffffff,
-        0 0 20px #5cb3ff;
-}
-
-
-/* =========================================
-   SOCIAL LINKS
-========================================= */
-
-.links {
-    width: 100%;
-
-    margin-top: 35px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 14px;
-}
-
-
-.link-button {
-    min-height: 75px;
-
-    display: flex;
-
-    align-items: center;
-
-    padding: 10px 20px 10px 12px;
-
-    text-decoration: none;
-
-    color: #ffffff;
-
-    border: 2px solid #89b8ff;
-
-    border-radius: 45px;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(30, 14, 65, .95),
-            rgba(8, 10, 35, .9)
-        );
-
-    box-shadow:
-        0 0 7px #7ccdff,
-        0 0 18px rgba(70, 190, 255, 0.65),
-        inset 0 0 15px rgba(168, 75, 255, .12);
-
-    transition:
-        transform .3s ease,
-        box-shadow .3s ease,
-        background .3s ease;
-}
-
-
-.link-button:hover {
-    transform: translateY(-4px) scale(1.015);
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(30, 62, 130, 0.8),
-            rgba(20, 20, 65, .95)
-        );
-
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 25px #5c90ff,
-        0 0 45px rgba(65, 106, 255, 0.8);
-}
-
-
-.link-button:active {
-    transform: scale(.97);
-}
-
-
-/* Icon */
-
-.icon {
-    width: 55px;
-    height: 55px;
-
-    flex-shrink: 0;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #05050e;
-
-    border: 2px solid rgba(150, 199, 255, 0.7);
-
-    font-size: 27px;
-
-    box-shadow:
-        0 0 8px #518eff,
-        inset 0 0 8px rgba(78, 149, 255, 0.3);
-}
-
-
-/* Link text */
-
-.link-text {
-    display: flex;
-
-    flex-direction: column;
-
-    flex: 1;
-
-    margin-left: 18px;
-
-    overflow: hidden;
-}
-
-
-.link-text strong {
-    font-family: Arial, sans-serif;
-
-    font-size: 18px;
-
-    text-transform: none;
-
-    text-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #56bbff;
-}
-
-
-.link-text span {
-    margin-top: 4px;
-
-    font-family: Arial, sans-serif;
-
-    font-size: 13px;
-
-    color: #dcd4ed;
-
-    opacity: .9;
-}
-
-
-/* Arrow */
-
-.arrow {
-    width: 35px;
-
-    text-align: center;
-
-    font-size: 25px;
-
-    color: #ffffff;
-
-    text-shadow:
-        0 0 8px #ffffff,
-        0 0 15px #5ca8ff;
-}
-
-
-/* =========================================
-   SOCIAL ICON COLORS
-========================================= */
-
-.link-button:nth-child(1) .icon,
-.link-button:nth-child(2) .icon,
-.link-button:nth-child(3) .icon {
-    color: #ffffff;
-}
-
-
-.link-button:nth-child(4) .icon {
-    color: #83cfff;
-}
-
-
-.link-button:nth-child(5) .icon {
-    color: #6bbaff;
-}
-
-
-.link-button:nth-child(6) .icon {
-    color: #ff3333;
-}
-
-
-.link-button:nth-child(7) .icon {
-    color: #31e86d;
-}
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-    margin-top: 30px;
-
-    padding-bottom: 20px;
-
-    text-align: center;
-}
-
-
-footer p {
-    font-family: "Brush Script MT", "Segoe Script", cursive;
-
-    font-size: clamp(25px, 5vw, 40px);
-
-    font-style: italic;
-
-    color: #9cdbff;
-
-    text-shadow:
-        0 0 5px #ffffff,
-        0 0 12px #6cc2ff,
-        0 0 25px #3995ff;
-}
-
-
-/* =========================================
-   ANIMATION
-========================================= */
-
-@keyframes glow {
-
-    0%,
-    100% {
-        filter: brightness(1);
-    }
-
-    50% {
-        filter: brightness(1.3);
-    }
-}
-
-
-.profile-image {
-    animation: glow 4s ease-in-out infinite;
-}
-
-
-@keyframes floating {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-8px);
-    }
-}
-
-
-.profile {
-    animation: floating 5s ease-in-out infinite;
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 600px) {
-
-    .container {
-        width: 100%;
-        padding: 40px 15px 30px;
-
-        border-left: none;
-        border-right: none;
-    }
-
-    .container::before {
-        left: 8px;
-        right: 8px;
-        top: 10px;
-        bottom: 10px;
-
-        border-radius: 25px;
-    }
-
-
-    .profile-image {
-        width: 160px;
-        height: 160px;
-    }
-
-
-    .profile-image::before {
-        width: 260px;
-        height: 85px;
-    }
-
-
-    .profile-image::after {
-        width: 180px;
-        height: 180px;
-    }
-
-
-    .profile h1 {
-        margin-top: 25px;
-    }
-
-
-    .profile h2 {
-        letter-spacing: 4px;
-    }
-
-
-    .reminder {
-        margin-top: 18px;
-    }
-
-
-    .schedule {
-        margin-top: 45px;
-
-        padding:
-            30px 15px 25px;
-    }
-
-
-    .time {
-        gap: 10px;
-    }
-
-
-    .time-box strong {
-        font-size: 43px;
-    }
-
-
-    .time-box span {
-        font-size: 17px;
-    }
-
-
-    .separator {
-        font-size: 30px;
-    }
-
-
-    .link-button {
-        min-height: 65px;
-
-        padding-right: 12px;
-    }
-
-
-    .icon {
-        width: 47px;
-        height: 47px;
-
-        font-size: 23px;
-    }
-
-
-    .link-text {
-        margin-left: 12px;
-    }
-
-
-    .link-text strong {
-        font-size: 15px;
-    }
-
-
-    .link-text span {
-        font-size: 11px;
-    }
-
-
-    .arrow {
-        font-size: 20px;
-    }
-}
-
-/* =========================================
-   JAVASCRIPT ANIMATION
-========================================= */
-
-.container {
-    opacity: 0;
-    transform: translateY(25px);
-
-    transition:
-        opacity 1s ease,
-        transform 1s ease;
-}
-
-
-.container.page-loaded {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-/* Ripple */
-
-.link-button {
-    position: relative;
-    overflow: hidden;
-}
-
-
-.ripple {
-    position: absolute;
-
-    width: 10px;
-    height: 10px;
-
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, .6);
-
-    transform: translate(-50%, -50%);
-
-    pointer-events: none;
-
-    animation: rippleEffect .6s linear;
-}
-
-
-@keyframes rippleEffect {
-
-    from {
-        width: 10px;
-        height: 10px;
-        opacity: .8;
-    }
-
-    to {
-        width: 500px;
-        height: 500px;
-        opacity: 0;
-    }
-
-}
-
-
-/* Scroll animation */
-
-.schedule,
-.link-button,
-footer {
-    opacity: 0;
-    transform: translateY(25px);
-
-    transition:
-        opacity .7s ease,
-        transform .7s ease;
-}
-
-
-.schedule.show,
-.link-button.show,
-footer.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-/* Star */
-
-.stars {
-    position: fixed;
-
-    inset: 0;
-
-    pointer-events: none;
-
-    z-index: -1;
-}
-
-
-.star {
-    position: absolute;
-
-    display: block;
-
-    border-radius: 50%;
-
-    background: white;
-
-    box-shadow:
-        0 0 5px white,
-        0 0 10px #b875ff;
-
-    animation:
-        starTwinkle infinite ease-in-out;
-}
-
-
-@keyframes starTwinkle {
-
-    0% {
-        opacity: .2;
-        transform: scale(.7);
-    }
-
-    50% {
-        opacity: 1;
-        transform: scale(1.4);
-    }
-
-    100% {
-        opacity: .2;
-        transform: scale(.7);
-    }
-
-}
+</body>
+</html>
